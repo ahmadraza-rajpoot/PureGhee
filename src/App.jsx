@@ -1,5 +1,7 @@
 import './App.css'
 import ChooseUs from './components/ChooseUs'
+import CTASection from './components/CTASection'
+import Footer from './components/Footer'
 import FounderSection from './components/FounderSection'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
@@ -18,9 +20,8 @@ function App() {
         <Products />
         <FounderSection />
         <TestimonialSection />
-    
-      
-      <div className='h-screen'></div>
+        <CTASection />
+        <Footer />
     </>
   )
 }

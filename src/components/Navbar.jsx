@@ -17,12 +17,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center bg-green-50 fixed top-0 z-50">
+    <div className="w-full flex justify-center bg-green-50 border border-green-100 fixed top-0 z-50">
       <div className="w-full max-w-6xl px-6 md:px-10 h-16 flex items-center justify-between">
 
         {/* Logo */}
         <h1 className="text-xl md:text-2xl font-semibold text-yellow-400">
-          Ghar Ka Ghee
+          The Village Diary
         </h1>
 
         {/* Desktop Menu */}
