@@ -12,7 +12,7 @@ const Footer = () => {
           {/* BRAND */}
           <div className="text-center md:text-start">
             <h2 className="text-xl font-semibold text-yellow-400">
-              Village Dairy
+              Gaon Dairy Co.
             </h2>
 
             <p className="mt-4 text-sm text-gray-400 leading-relaxed">
@@ -58,7 +58,7 @@ const Footer = () => {
 
         {/* DIVIDER */}
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
-          © {new Date().getFullYear()} Village Dairy. All rights reserved.
+          © {new Date().getFullYear()} Gaon Dairy Co. All rights reserved.
         </div>
 
       </div>

@@ -22,7 +22,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <h1 className="text-xl md:text-2xl font-semibold text-yellow-400">
-          The Village Diary
+          Gaon Dairy Co.
         </h1>
 
         {/* Desktop Menu */}
