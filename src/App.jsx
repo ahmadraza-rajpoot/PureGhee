@@ -1,27 +1,28 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import ChooseUs from './components/ChooseUs'
-import CTASection from './components/CTASection'
-import Footer from './components/Footer'
-import FounderSection from './components/FounderSection'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import Products from './components/Products'
-import TestimonialSection from './components/TestimonialSection'
+
+import HomePage from './pages/HomePage'
+import ProductDetailPage from './pages/ProductDetailPage'
+import Body from './components/Body'
 
 function App() {
 
 
   return (
     <>
-      <Navbar />
-      
-        <Hero />
-        <ChooseUs />
-        <Products />
-        <FounderSection />
-        <TestimonialSection />
-        <CTASection />
-        <Footer />
+    <BrowserRouter>
+
+      <Routes>
+
+        <Route path='/' element={<Body />}>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/products/detail' element = {<ProductDetailPage />} />
+        </Route>
+
+      </Routes>
+    
+    </BrowserRouter>
+  
     </>
   )
 }
