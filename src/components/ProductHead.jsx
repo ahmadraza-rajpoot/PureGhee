@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import pr1 from "../assets/products/product1.jpeg";
-import pr2 from "../assets/products/product1_2.jpg";
+
 import { BsStarFill } from "react-icons/bs";
 import { LuCalendarClock } from "react-icons/lu";
 import { GrDeliver } from "react-icons/gr";
+import ProductImageContainer from "./ProductImageContainer";
 
 const ProductHead = () => {
-  const productImages = [pr1, pr2, pr1, pr1];
-  const [mainImgIdx, setMainImgIdx] = useState(0);
+  
 
   const productFeatures = [
     "Enhances natural energy levels and supports daily stamina.",
@@ -23,37 +22,8 @@ const ProductHead = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
         {/* LEFT: Images */}
-        <div>
-          {/* Main Image */}
-          <div className="w-full lg:w-130 h-[350px] sm:h-[450px] rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src={productImages[mainImgIdx]}
-              alt="desi ghee"
-              className="w-full h-full object-cover object-center hover:scale-105 transition duration-300"
-            />
-          </div>
-
-          {/* Thumbnails */}
-          <div className="flex justify-center gap-3 mt-4 overflow-x-auto">
-            {productImages.map((item, idx) => (
-              <div
-                key={idx}
-                onClick={() => setMainImgIdx(idx)}
-                className={`w-20 h-20 rounded-lg overflow-hidden cursor-pointer border-2 ${
-                  mainImgIdx === idx
-                    ? "border-emerald-500"
-                    : "border-transparent"
-                }`}
-              >
-                <img
-                  src={item}
-                  alt="thumb"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        
+        <ProductImageContainer />
 
         {/* RIGHT: Content */}
         <div className="flex flex-col gap-5">
