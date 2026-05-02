@@ -4,6 +4,7 @@ import { BsStarFill } from "react-icons/bs";
 import { LuCalendarClock } from "react-icons/lu";
 import { GrDeliver } from "react-icons/gr";
 import ProductImageContainer from "./ProductImageContainer";
+import { Link } from "react-router-dom";
 
 const ProductHead = () => {
   
@@ -84,9 +85,9 @@ const ProductHead = () => {
             <button className="w-full sm:w-72 bg-emerald-500 hover:bg-emerald-600 text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:cursor-pointer hover:scale-[1.02]">
               Order on WhatsApp
             </button>
-            <button className="w-full sm:w-72 border border-emerald-500  hover:bg-emerald-600 text-emerald-500 hover:text-white transition-all duration-300 hover:cursor-pointer py-3 rounded-xl font-semibold hover:scale-[1.02]">
+            <a href='#product-content' className="w-full text-center sm:w-72 border border-emerald-500  hover:bg-emerald-600 text-emerald-500 hover:text-white transition-all duration-300 hover:cursor-pointer py-3 rounded-xl font-semibold hover:scale-[1.02]">
               View Description
-            </button>
+            </a>
           </div>
 
         </div>
