@@ -63,7 +63,7 @@ const ProductContent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div id="">
+    <div>
       {productContent.map((item, idx) => (
         <ProductAccordian
           key={item.id}

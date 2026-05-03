@@ -6,10 +6,10 @@ const Footer = () => {
 
       <div className="max-w-6xl  mx-auto px-6">
 
-        {/* TOP GRID */}
+     
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-          {/* BRAND */}
+     
           <div className="text-center md:text-start">
             <h2 className="text-xl font-semibold text-yellow-400">
               Gaon Dairy Co.
@@ -21,7 +21,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* LINKS */}
           <div className="text-center md:text-start">
             <h3 className="text-yellow-300 font-medium mb-4">Quick Links</h3>
 
@@ -32,7 +31,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* CONTACT */}
+      
           <div className="text-center md:text-start">
             <h3 className="text-yellow-300 font-medium mb-4">Contact</h3>
 
@@ -56,7 +55,7 @@ const Footer = () => {
 
         </div>
 
-        {/* DIVIDER */}
+        
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
           © {new Date().getFullYear()} Gaon Dairy Co. All rights reserved.
         </div>
