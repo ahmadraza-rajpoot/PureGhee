@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-6 text-yellow-400 font-medium">
           <a href="#">Home</a>
           <a href="#">Products</a>
-          <a href="#">About Us</a>
+          
         </div>
 
         {/* Mobile Button */}
@@ -48,7 +48,7 @@ const Navbar = () => {
           >
             <a href="#" onClick={() => setOpen(false)}>Home</a>
             <a href="#" onClick={() => setOpen(false)}>Products</a>
-            <a href="#" onClick={() => setOpen(false)}>About Us</a>
+            {/* <a href="#" onClick={() => setOpen(false)}>About Us</a> */}
           </div>
         )}
       </div>
