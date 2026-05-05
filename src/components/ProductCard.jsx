@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const ProductCard = ({product}) => {
@@ -14,7 +15,7 @@ const ProductCard = ({product}) => {
       {/* Image */}
       <div className="overflow-hidden rounded-2xl">
         <img
-          src={product.img}
+          src={product.images.primary}
           alt="Desi Ghee"
           className="mx-auto w-full h-50 object-cover transition duration-500 group-hover:scale-110"
         />
@@ -22,23 +23,23 @@ const ProductCard = ({product}) => {
 
       {/* Content */}
       <h3 className="mt-2 font-semibold text-lg text-[#3A2E2A]">
-        {product.shortTitle}
+        {product.title.short}
       </h3>
 
       <p className="text-sm text-gray-500 mt-2">
-        {product.desc}
+        {product.description.short}
       </p>
 
       {/* Price */}
       <p className="mt-3 text-lg font-bold text-amber-500">
-        Rs {product.price}
+        Rs {product.pricing.price}
       </p>
 
       {/* CTA */}
-      <button className="mt-3 w-full bg-yellow-400 hover:bg-yellow-500 
+      <Link to={`/products/detail/${product.slug}`} className="block active:scale-105 hover:cursor-pointer bg-yellow-400 hover:bg-yellow-500 
       text-white font-medium py-2.5 rounded-full transition">
-        Order on WhatsApp
-      </button>
+        View Details
+      </Link>
 
     </div>
   );

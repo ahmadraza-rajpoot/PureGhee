@@ -1,10 +1,8 @@
-import pr1 from "../assets/products/product1.jpeg";
-import pr2 from "../assets/products/product1_2.jpg";
 import React, {useState} from 'react'
 
-const ProductImageContainer = () => {
+const ProductImageContainer = ({images}) => {
 
-    const productImages = [pr1, pr2, pr1, pr1];
+  
     const [mainImgIdx, setMainImgIdx] = useState(0);
 
   return (
@@ -12,7 +10,7 @@ const ProductImageContainer = () => {
           {/* Main Image */}
           <div className="w-full lg:w-130 h-[350px] sm:h-[450px] rounded-2xl overflow-hidden shadow-lg">
             <img
-              src={productImages[mainImgIdx]}
+              src={images.gallery[mainImgIdx]}
               alt="desi ghee"
               className="w-full h-full object-cover object-center hover:scale-105 transition duration-300"
             />
@@ -20,7 +18,7 @@ const ProductImageContainer = () => {
 
           {/* Thumbnails */}
           <div className="flex justify-center gap-3 mt-4 overflow-x-auto">
-            {productImages.map((item, idx) => (
+            {images.gallery.map((item, idx) => (
               <div
                 key={idx}
                 onClick={() => setMainImgIdx(idx)}

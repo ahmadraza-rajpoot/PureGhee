@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-
 import { BsStarFill } from "react-icons/bs";
 import { LuCalendarClock } from "react-icons/lu";
 import { GrDeliver } from "react-icons/gr";
 import ProductImageContainer from "./ProductImageContainer";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import productsData from "../data/productsData";
+
 
 const ProductHead = () => {
   
+  const {slug} = useParams()
+  const {description, features, images, pricing, title, productContent} = productsData.find(p => p.slug == slug)
+  //console.log(product)
 
   const productFeatures = [
     "Enhances natural energy levels and supports daily stamina.",
@@ -24,19 +28,19 @@ const ProductHead = () => {
 
         {/* LEFT: Images */}
         
-        <ProductImageContainer />
+        <ProductImageContainer images= {images} />
 
         {/* RIGHT: Content */}
         <div className="flex flex-col gap-5">
 
           {/* Title */}
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
-            Cow's Milk Desi Ghee 1KG Bucket
+           {title.full}
           </h1>
 
           {/* Price */}
           <h3 className="text-2xl font-semibold text-emerald-600">
-            Rs. 3,000
+            Rs. {pricing.price}
           </h3>
 
           {/* Description */}
@@ -45,15 +49,13 @@ const ProductHead = () => {
               Description
             </h2>
             <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-              Experience the rich taste and aroma of 100% pure cow's milk desi
-              ghee, crafted using traditional methods to preserve its natural
-              goodness. Packed with essential nutrients and perfect for daily use.
+              {description.full}
             </p>
           </div>
 
           {/* Features */}
           <div className="flex flex-col gap-3">
-            {productFeatures.map((feature, idx) => (
+            {features.map((feature, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <BsStarFill className="text-yellow-400 mt-1" />
                 <p className="text-sm text-gray-600">{feature}</p>

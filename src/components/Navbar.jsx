@@ -27,8 +27,8 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6 text-yellow-400 font-medium">
-          <a href="#">Home</a>
-          <a href="#">Products</a>
+          <a href="/">Home</a>
+          <a href="#products">Products</a>
           
         </div>
 
@@ -46,8 +46,8 @@ const Navbar = () => {
             ref={menuRef}
             className="absolute top-16 right-6 w-56 bg-white border border-emerald-100 rounded-2xl shadow-lg p-5 flex flex-col gap-4 text-yellow-400 font-medium md:hidden"
           >
-            <a href="#" onClick={() => setOpen(false)}>Home</a>
-            <a href="#" onClick={() => setOpen(false)}>Products</a>
+            <a href="/" onClick={() => setOpen(false)}>Home</a>
+            <a href="#products" onClick={() => setOpen(false)}>Products</a>
             {/* <a href="#" onClick={() => setOpen(false)}>About Us</a> */}
           </div>
         )}

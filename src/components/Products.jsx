@@ -1,61 +1,12 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import product1 from '../assets/products/product1.jpeg'
-import product2 from '../assets/products/product2.webp'
+import productsData from "../data/productsData";
 
-
-const productsData = [
-    {
-        id:1,
-        shortTitle:"Cow's Milk Desi Ghee 1KG",
-        fullTitle:"Cow's Milk Desi Ghee 1KG Bucket",
-        desc:"Rich aroma and traditional taste",
-        img:product1,
-        price:3000,
-        weight:"1kg",
-        bestSeller:true,
-    },
-     {
-        id:4,
-        shortTitle:"Cow's Milk Butter 2KG",
-        fullTitle:"Cow's Milk Butter Natural Unsalted Frozen 2KG",
-        desc:"Pure natural cow milk butter",
-        img:product2,
-        price:5000,
-        weight:"2kg",
-        bestSeller:false,
-    },
-     
-     {
-        id:3,
-        shortTitle:"Cow's Milk Desi Ghee 2KG",
-        fullTitle:"Cow's Milk Desi Ghee 2KG Bucket",
-        desc:"Rich aroma and traditional taste",
-        img:product1,
-        price:6000,
-        weight:"2kg",
-        bestSeller:false,
-    },
-     
-
-    {
-        id:2,
-        shortTitle:"Cow's Milk Butter 1KG",
-        fullTitle:"Cow's Milk Butter Natural Unsalted Frozen 1KG",
-        desc:"Pure natural cow milk butter",
-        img:product2,
-        price:2500,
-        weight:"1kg",
-        bestSeller:true,
-    },
-
-  
-]
 
 
 const Products = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="products" className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-900">
           From Our Village <span className="text-yellow-400">Dairy</span> to Your Home
