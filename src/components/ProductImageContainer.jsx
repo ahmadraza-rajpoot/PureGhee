@@ -7,8 +7,8 @@ const ProductImageContainer = ({images}) => {
 
   return (
     <div>
-          {/* Main Image */}
-          <div className="w-full lg:w-130 h-[350px] sm:h-[450px] rounded-2xl overflow-hidden shadow-lg">
+          
+          <div className="w-full lg:w-130 h-87.5 sm:h-112.5 rounded-2xl overflow-hidden shadow-lg">
             <img
               src={images.gallery[mainImgIdx]}
               alt="desi ghee"
@@ -16,7 +16,7 @@ const ProductImageContainer = ({images}) => {
             />
           </div>
 
-          {/* Thumbnails */}
+        
           <div className="flex justify-center gap-3 mt-4 overflow-x-auto">
             {images.gallery.map((item, idx) => (
               <div
