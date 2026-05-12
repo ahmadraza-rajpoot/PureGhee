@@ -11,14 +11,18 @@ const ProductHead = () => {
   
   const {slug} = useParams()
   const {description, features, images, pricing, title, productContent} = productsData.find(p => p.slug == slug)
-  //console.log(product)
+  
+  const handleOrder = ()=>{
+    const phone = "923056887561"; // your WhatsApp number
+    const message = `Hello, I want to order ${title.short}.
 
-  const productFeatures = [
-    "Enhances natural energy levels and supports daily stamina.",
-    "Packed with healthy fats and fat-soluble vitamins for overall wellness.",
-    "Aids in improving digestion and nutrient absorption.",
-    "Supports brain function and helps maintain a strong immune system.",
-  ];
+  Product: ${title.full}`;
+
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+  window.open(url, "_blank")  
+}
+
+
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-5">
@@ -84,9 +88,10 @@ const ProductHead = () => {
 
           {/* Button */}
           <div className="flex flex-col sm:flex-row gap-2 justify-center mt-3">
-            <button className="w-full sm:w-72 bg-emerald-500 hover:bg-emerald-600 text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:cursor-pointer hover:scale-[1.02]">
+            <button onClick={handleOrder} className="w-full sm:w-72 bg-emerald-500 hover:bg-emerald-600 text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:cursor-pointer hover:scale-[1.02]">
               Order on WhatsApp
             </button>
+
             <a href='#product-content' className="w-full text-center sm:w-72 border border-emerald-500  hover:bg-emerald-600 text-emerald-500 hover:text-white transition-all duration-300 hover:cursor-pointer py-3 rounded-xl font-semibold hover:scale-[1.02]">
               View Description
             </a>

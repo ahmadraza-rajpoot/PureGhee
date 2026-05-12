@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import review from "../assets/review1.jpg";
 import reviewImg from "../assets/reviewPic.jpg";
+import reviewImg2 from "../assets/products/desighee4.jpeg";
 
 const TestimonialCard = ({name}) => {
   const [selectedImg, setSelectedImg] = useState(null);
 
-  const images = [review, review, review];
+  const images = [review, review, reviewImg2];
 
   return (
     <div className="w-[300px]">
