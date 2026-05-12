@@ -2,6 +2,11 @@ import pr1 from "../assets/products/product1.jpeg";
 import pr2 from "../assets/products/product1_2.jpg";
 import pr3 from "../assets/products/product2.webp";
 import pr4 from '../assets/products/product2_2.webp'
+import desighee1 from '../assets/products/desighee1.jpeg'
+//import desighee2 from '../assets/products/desighee2.jpeg'
+import desighee2 from '../assets/products/desighee3.jpeg'
+import desighee3 from '../assets/products/desighee4.jpeg'
+import desighee4 from '../assets/products/desighee5.jpeg'
 
 const productsData = [
   {
@@ -82,8 +87,8 @@ const productsData = [
     ],
 
     images: {
-      primary: pr1,
-      gallery: [pr1, pr2, pr1, pr2],
+      primary: desighee4,
+      gallery: [desighee4, desighee1, desighee2, desighee3],
     },
 
     pricing: {
