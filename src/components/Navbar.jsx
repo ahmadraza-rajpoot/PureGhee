@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center bg-green-50 border border-green-100 fixed top-0 z-50">
+    <nav className="w-full flex justify-center bg-green-50 border border-green-100 fixed top-0 z-50">
       <div className="w-full max-w-6xl px-6 md:px-10 h-16 flex items-center justify-between">
 
         {/* Logo */}
@@ -27,7 +28,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6 text-yellow-400 font-medium">
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
           <a href="#products">Products</a>
           
         </div>
@@ -52,7 +53,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 };
 

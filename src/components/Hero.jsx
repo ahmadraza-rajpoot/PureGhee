@@ -1,8 +1,9 @@
 import React from "react";
-import farm from "../assets/heroImg.jpg";
+import farm from "../assets/products/desighee7.jpeg";
 import { FaStar } from "react-icons/fa";
 
 import { ImPower } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
       </svg>
     </div>
 
-      <div className="w-full max-w-6xl mx-auto px-6 md:px-10 lg:px-15 py-10">
+      <div className="w-full max-w-6xl mx-auto px-6 md:px-10 lg:px-4 xl:px-0 py-10">
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
 
@@ -50,15 +51,15 @@ const Hero = () => {
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mt-2">
 
-                <a
-                  href="#"
-                  className="bg-yellow-400 border border-yellow-400 hover:text-yellow-400 hover:bg-transparent text-white px-7 py-3 rounded-full text-center font-medium transition-all duration-300"
+                <Link
+                  to={'/products/detail/cows-milk-desi-ghee-1kg'}
+                  className="bg-yellow-300 border border-yellow-300 hover:text-yellow-400 hover:bg-transparent text-white px-7 py-3 rounded-full text-center font-medium transition-all duration-300"
                 >
                   Shop Now
-                </a>
+                </Link>
 
                 <a
-                  href="#"
+                  href="#products"
                   className="bg-white border border-yellow-200 text-emerald-900 px-6 py-3 rounded-full text-center font-medium hover:bg-yellow-50 transition"
                 >
                   View Products
