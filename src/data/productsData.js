@@ -4,8 +4,9 @@ import pr3 from "../assets/products/product2.webp";
 import pr4 from '../assets/products/product2_2.webp'
 import desighee1 from '../assets/products/desighee1.jpeg'
 import desighee2 from '../assets/products/desighee2.jpeg'
-import desighee3 from '../assets/products/desighee6.jpeg'
-import desighee4 from '../assets/products/desighee5.jpeg'
+import desighee3 from '../assets/products/desighee3.jpeg'
+import desighee4 from '../assets/products/desighee4.jpeg'
+
 
 const productsData = [
   {
@@ -86,8 +87,8 @@ const productsData = [
     ],
 
     images: {
-      primary: desighee3,
-      gallery: [desighee3, desighee4 , desighee2, desighee1],
+      primary: desighee4,
+      gallery: [desighee4, desighee3  , desighee2, desighee1],
     },
 
     pricing: {
@@ -179,8 +180,8 @@ const productsData = [
     ],
 
     images: {
-      primary: desighee3,
-      gallery: [desighee3, desighee4 , desighee2, desighee1],
+      primary: desighee4,
+      gallery: [desighee4, desighee3 , desighee2, desighee1],
     },
 
     pricing: {

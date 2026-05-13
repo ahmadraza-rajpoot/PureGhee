@@ -1,5 +1,5 @@
 import React from "react";
-import farm from "../assets/products/desighee7.jpeg";
+import farm from "../assets/products/desighee4.jpeg";
 import { FaStar } from "react-icons/fa";
 
 import { ImPower } from "react-icons/im";

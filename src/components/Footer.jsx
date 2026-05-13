@@ -1,4 +1,5 @@
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { INSTAGRAM, WHATS_APP_NUMBER } from "../utils/constants";
 
 const Footer = () => {
   return (
@@ -40,7 +41,7 @@ const Footer = () => {
             </p>
 
             <a
-              href="https://wa.me/923XXXXXXXXX"
+              href={`https://wa.me/${WHATS_APP_NUMBER}`}
               target="_blank"
               className="inline-flex items-center gap-2 mt-4 bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full text-sm transition"
             >
@@ -48,9 +49,9 @@ const Footer = () => {
               Chat on WhatsApp
             </a>
 
-            <div className="flex gap-3 mt-5 justify-center md:justify-start">
+            <a href={INSTAGRAM} target="_blank" className="flex gap-3 mt-5 justify-center md:justify-start w-fit">
               <FaInstagram className="text-lg hover:text-white cursor-pointer transition" />
-            </div>
+            </a>
           </div>
 
         </div>

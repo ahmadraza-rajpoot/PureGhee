@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import { WHATS_APP_NUMBER } from "../utils/constants";
 
 const CTASection = () => {
   return (
@@ -18,7 +19,7 @@ const CTASection = () => {
 
         {/* Button */}
         <a
-          href="https://wa.me/923242108192"
+          href={ `https://wa.me/${WHATS_APP_NUMBER}`}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-8 inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-full text-sm sm:text-base font-medium transition shadow-md hover:shadow-lg"

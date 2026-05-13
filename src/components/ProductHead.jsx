@@ -5,6 +5,7 @@ import { GrDeliver } from "react-icons/gr";
 import ProductImageContainer from "./ProductImageContainer";
 import { Link, useParams } from "react-router-dom";
 import productsData from "../data/productsData";
+import { WHATS_APP_NUMBER } from "../utils/constants";
 
 
 const ProductHead = () => {
@@ -13,12 +14,12 @@ const ProductHead = () => {
   const {description, features, images, pricing, title, productContent} = productsData.find(p => p.slug == slug)
   
   const handleOrder = ()=>{
-    const phone = "923056887561"; // your WhatsApp number
+   
     const message = `Hello, I want to order ${title.short}.
 
-  Product: ${title.full}`;
+Product: ${title.full}`;
 
-  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+  const url = `https://wa.me/${WHATS_APP_NUMBER}?text=${encodeURIComponent(message)}`
   window.open(url, "_blank")  
 }
 
