@@ -1,7 +1,7 @@
-import pr1 from "../assets/products/product1.jpeg";
-import pr2 from "../assets/products/product1_2.jpg";
-import pr3 from "../assets/products/product2.webp";
-import pr4 from '../assets/products/product2_2.webp'
+import butter1 from "../assets/products/butter1.webp";
+import butter2 from "../assets/products/butter2.jpg";
+import butter3 from "../assets/products/butter3.webp";
+
 import desighee1 from '../assets/products/desighee1.jpeg'
 import desighee2 from '../assets/products/desighee2.jpeg'
 import desighee3 from '../assets/products/desighee3.jpeg'
@@ -273,8 +273,8 @@ const productsData = [
     ],
 
     images: {
-      primary: pr3,
-      gallery: [pr3, pr4, pr3, pr4],
+      primary: butter1,
+      gallery: [butter1, butter2, butter3],
     },
 
     pricing: {
@@ -366,8 +366,8 @@ const productsData = [
     ],
 
     images: {
-      primary: pr3,
-      gallery: [pr3, pr4, pr3, pr4],
+      primary: butter1,
+      gallery: [butter1, butter2, butter3],
     },
 
     pricing: {

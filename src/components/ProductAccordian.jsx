@@ -41,7 +41,7 @@ const ProductAccordian = ({isOpen, onToggle, item}) => {
               
               {
                 item.highlights.items.map((feature)=>(
-                    <div className="flex items-start gap-2">
+                    <div key={feature} className="flex items-start gap-2">
                         <GoDotFill className="text-emerald-500 mt-1" />
                         <p>{feature}</p>
                     </div>
