@@ -1,16 +1,32 @@
-# React + Vite
+# PureGhee - Pure Taste, Pure Health
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PureGhee is a modern web application built to showcase and promote premium desi ghee and butter products.  
+It represents a clean, simple, and trustworthy digital brand identity focused on purity, tradition, and health.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About the Project
 
-## React Compiler
+PureGhee is designed to deliver an elegant and user-friendly experience for customers looking for high-quality desi ghee and butter in Pakistan.  
+The website highlights product quality, brand story, and easy contact/order options.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js  
+- Vite  
+- JavaScript (ES6+)  
+- HTML5 & CSS3  
+- ESLint (for code quality)
+
+---
+
+## Features
+
+- Modern and responsive UI  
+- Fast performance with Vite  
+- Clean product-focused design  
+- Mobile-friendly layout  
+- Contact & order integration (WhatsApp / Email)  
+- Brand-focused landing experience  
