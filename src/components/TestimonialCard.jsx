@@ -3,10 +3,10 @@ import review from "../assets/review1.jpg";
 import reviewImg from "../assets/reviewPic.jpg";
 import reviewImg2 from "../assets/products/desighee4.jpeg";
 
-const TestimonialCard = ({name}) => {
+const TestimonialCard = ({item}) => {
   const [selectedImg, setSelectedImg] = useState(null);
 
-  const images = [review, review, reviewImg2];
+  const images = [];
 
   return (
     <div className="w-[300px]">
@@ -25,13 +25,12 @@ const TestimonialCard = ({name}) => {
 
         {/* Review */}
         <p className="text-gray-600 mt-3 text-sm leading-relaxed">
-          I ordered once and now I can't go back to market products. The quality
-          and taste feel just like homemade. Truly pure and trustworthy.
+         {item.review}
         </p>
 
         {/* Name */}
         <p className="mt-5 font-semibold text-[#3A2E2A]">
-          {name}
+          {item.name}
         </p>
 
         {/* WhatsApp Images */}

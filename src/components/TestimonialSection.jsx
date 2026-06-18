@@ -7,7 +7,30 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 const Testimonials = () => {
 
-    const [reviewData ,setReviewData] = useState(['Ahmad','Raza','Ali','Awais', 'Hamza', 'Omais'])
+    const reviews = [
+  {
+    "id": 1,
+    "name": "Ali Ahmad",
+    "review": "Amazing desi ghee. full rich taste, bilkul ghar jaisa."
+  },
+  {
+    "id": 2,
+    "name": "Yasir",
+    "review": "MashaAllah kamal taste hai is desi gheeka, highly recommended."
+  },
+  {
+    "id": 3,
+    "name": "Ayesha Khan",
+    "review": "Really good quality desi ghee 👍 taste is rich and pure."
+  },
+  {
+    "id": 4,
+    "name": "Usman Tariq",
+    "review": "Butter bohat creamy aur fresh hai. Perfect for daily use"
+  }
+]
+
+    const [reviewData ,setReviewData] = useState(reviews)
     const [start, setStart] = useState(0)
     const [visible, setVisible] = useState(3);
 
@@ -74,7 +97,7 @@ const Testimonials = () => {
             <div className="max-w-6xl  grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mx-auto ">
 
                 {
-                    reviewData.slice(start,start+visible).map((item,idx)=>(<TestimonialCard key={item} name={item} />))
+                    reviewData.slice(start,start+visible).map((item,idx)=>(<TestimonialCard key={item} item={item} />))
                 }
             
             </div>

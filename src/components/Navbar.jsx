@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import logo from '../assets/puregheelogo.png'
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef();
@@ -22,9 +24,13 @@ const Navbar = () => {
       <div className="w-full max-w-6xl px-6 md:px-10 h-14 flex items-center justify-between">
 
         {/* Logo */}
-        <h1 className="text-xl md:text-2xl font-semibold text-yellow-500 tracking-wide">
-          Gaon Dairy Co.
-        </h1>
+        {/* <h1 className="text-xl md:text-2xl font-semibold text-yellow-500 tracking-wide">
+          PureGhee
+        </h1> */}
+        <Link to={"/"}>
+          <img src={logo} className="size-20" alt="" />
+        </Link>
+        
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-yellow-500 font-medium">
