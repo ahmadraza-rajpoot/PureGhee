@@ -8,7 +8,7 @@ const messages = [
     icon:FaTruck,
   }
   ,{
-    title:"Estimated delivery time 3 to 4 working days",
+    title:"Estimated delivery time 3 to 5 working days",
     icon:IoIosTime
   }
   
