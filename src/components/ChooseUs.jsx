@@ -30,7 +30,7 @@ const ChooseUs = () => {
   ]
 
   return (
-    <section className="py-16 ">
+    <section id="process" className="py-16 ">
 
       <div className="max-w-6xl mx-auto px-6">
 
