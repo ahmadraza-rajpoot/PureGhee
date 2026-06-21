@@ -15,7 +15,7 @@ const ProductCard = ({product}) => {
       {/* Image */}
       <div className="overflow-hidden rounded-2xl">
         <img
-          src={product.images.primary}
+          src={product.images.primary.src}
           alt="Desi Ghee"
           className="mx-auto w-full h-50 object-cover transition duration-500 group-hover:scale-110"
         />

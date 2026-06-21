@@ -7,6 +7,8 @@ import desighee2 from '../assets/products/desighee2.jpeg'
 import desighee3 from '../assets/products/desighee3.jpeg'
 import desighee4 from '../assets/products/desighee4.jpeg'
 
+import video1 from '../assets/products/desighee_video1.mp4'
+
 
 const productsData = [
   {
@@ -87,8 +89,8 @@ const productsData = [
     ],
 
     images: {
-      primary: desighee4,
-      gallery: [desighee4, desighee3  , desighee2, desighee1],
+      primary: {type:"image", src:desighee4},
+      gallery: [{type:"image", src:desighee4}, {type:"image", src:desighee3}  , {type:"image", src:desighee2}, {type:"media", src:video1 }],
     },
 
     pricing: {
@@ -180,8 +182,8 @@ const productsData = [
     ],
 
     images: {
-      primary: desighee4,
-      gallery: [desighee4, desighee3 , desighee2, desighee1],
+      primary: {type:"image", src:desighee4},
+      gallery: [{type:"image", src:desighee4}, {type:"image", src:desighee3}  , {type:"image", src:desighee2}, {type:"media", src:video1 }],
     },
 
     pricing: {
@@ -273,8 +275,8 @@ const productsData = [
     ],
 
     images: {
-      primary: butter1,
-      gallery: [butter1, butter2, butter3],
+      primary: {src:butter1, type:"image"},
+      gallery: [{src:butter1, type:"image"}, {src:butter2, type:"image"}, {src:butter3, type:"image"}],
     },
 
     pricing: {
@@ -366,8 +368,8 @@ const productsData = [
     ],
 
     images: {
-      primary: butter1,
-      gallery: [butter1, butter2, butter3],
+      primary: {src:butter1, type:"image"},
+      gallery: [{src:butter1, type:"image"}, {src:butter2, type:"image"}, {src:butter3, type:"image"}],
     },
 
     pricing: {
