@@ -26,7 +26,7 @@ const Footer = () => {
             <h3 className="text-yellow-300 font-medium mb-4">Quick Links</h3>
 
             <ul className="space-y-2 text-sm flex flex-col items-center md:items-start">
-              <li className="hover:text-green-300 w-fit cursor-pointer transition"> <a href="#hero">Home</a></li>
+              <li className="hover:text-green-300 w-fit cursor-pointer transition"> <a href="/#hero">Home</a></li>
               <li className="hover:text-green-300 w-fit cursor-pointer transition"> <a href="#products">Products</a> </li>
               <li className="hover:text-green-300 w-fit cursor-pointer transition"> <a href="#process">Our Process</a></li>
             </ul>
